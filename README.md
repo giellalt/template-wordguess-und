@@ -1,6 +1,41 @@
 # Any-Language Word Guessing Game
 
-## Changes in this fork
+## Changes in and notes for the GiellaLT fork
+
+### Changes
+
+- the fork is a template repo, to be used with `gut` to generate new repos for new languages
+- there are a few changes in `scr/constants/config.ts` to give it suitable defaults for our infra
+
+### Notes
+
+The repo requires a new version of Node. Use `nvm` to ensure you have the correct node version active:
+
+```sh
+nvm use node
+```
+
+This repo uses [husky](https://typicode.github.io/husky/) to set up precommit hooks for `git`. To install it, run the following:
+
+```sh
+npm install --save-dev husky
+```
+
+If you get an error message saying that `.husky/_/husky.sh` is missing, run this:
+
+```sh
+npx husky install
+```
+
+To make sure that the tools needed by `husky` are available for [Git Tower](https://www.git-tower.com/) or other GUI git clients to run the pre-commit hook, do:
+
+```sh
+echo $PATH
+```
+
+Copy the output and define the environment variable PATH in **Tower > Settings… > Environment**. Paste the above output as the value for the variable.
+
+## Changes in upstream fork
 
 I've adapted this code to allow for simply adapting it to another language. The wordlist and orthography (writing system) here are for the Gitksan language, but this repository is meant to be adapted to other languages. I've also added a script for publishing on GitHub Pages.
 
