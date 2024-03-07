@@ -1,7 +1,7 @@
 {
-    "name": "any-language-word-guessing-game",
+    "name": "wordguess-__UND__",
     "version": "0.1.0",
-    "homepage": "https://roedoejet.github.io/AnyLanguage-Word-Guessing-Game",
+    "homepage": "https://giellalt.github.io/wordguess-__UND__",
     "private": true,
     "dependencies": {
         "@bcgov/bc-sans": "^1.0.1",
